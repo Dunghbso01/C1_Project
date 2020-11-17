@@ -6,9 +6,9 @@ import {Ionicons} from '@expo/vector-icons';
 import React from 'react';
 
 export default class RegisterScreen extends React.Component {
-    navigationOptions: {
-        headerShown: false,
-      }
+    // navigationOptions: {
+    //     headerShown: false,
+    //   }
 
     state = {
         name: "",

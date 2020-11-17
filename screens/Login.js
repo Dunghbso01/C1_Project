@@ -6,9 +6,9 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 
 export default class LoginScreen extends React.Component {
-    navigationOptions: {
-        headerShown: false,
-      }
+    // navigationOptions: {
+    //     headerShown: false,
+    //   }
 
     state = {
         email: "",

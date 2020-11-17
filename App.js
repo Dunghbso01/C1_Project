@@ -1,14 +1,17 @@
 import * as firebase from 'firebase';
+// import * as React from 'react';
 
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 
+
 // import Fire from './Fire';
 // import FirebaseKeys from './config';
+
 import HomeScreen from './screens/HomeScreen';
 import {Ionicons} from '@expo/vector-icons';
 import LoadingScreen from './screens/LoadingScreen';
 import LoginScreen from './screens/Login';
-import MessageScreen from './screens/MessageScreen';
+import event from './screens/event';
 import NotificationScreen from './screens/NotificationScreen';
 import PostScreen from './screens/PostScreen';
 import ProfileScreen from './screens/ProfileScreen';
@@ -16,6 +19,9 @@ import React from 'react';
 import RegisterScreen from './screens/Register';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import {createStackNavigator} from 'react-navigation-stack';
+import search from './screens/search'
+import { Searchbar } from 'react-native-paper'; 
+
 
 // var firebaseConfig = FirebaseKeys;
 // firebase.initializeApp(firebaseConfig);
@@ -28,6 +34,7 @@ const AppContainer = createStackNavigator(
   {
     default: createBottomTabNavigator (
       {
+        
         Home: {
           screen: HomeScreen,
           navigationOptions: {
@@ -35,8 +42,8 @@ const AppContainer = createStackNavigator(
           }
         },
     
-        Message: {
-          screen: MessageScreen,
+        Event: {
+          screen: event,
           navigationOptions: {
             tabBarIcon: ({tintColor}) => <Ionicons name ="ios-chatboxes" size={24} color={tintColor} />
           }
@@ -82,11 +89,11 @@ const AppContainer = createStackNavigator(
             }
           }
         },
-        tabBarOptions: {
-          activeTintColor: "#161F3D",
-          inactiveTintColor: "#B8BBC4",
-          showLabel: false
-        }
+        // tabBarOptions: {
+        //   activeTintColor: "#161F3D",
+        //   inactiveTintColor: "#B8BBC4",
+        //   showLabel: false
+        // }
       }
     ),
     postModal: {

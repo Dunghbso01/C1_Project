@@ -16,26 +16,27 @@ export default class HomeScreen extends React.Component {
         this.setState({ email, displayName });
     }
 
-    signOutUser = () => {
-        firebase.auth().signOut();
-    }
+//     signOutUser = () => {
+//         firebase.auth().signOut();
+//     }
     render() {
         LayoutAnimation.easeInEaseOut();
         return (
             <View>
-                <Text>Hi {this.state.email}!</Text>
+                {/* <Text>Hi {this.state.email}!</Text>
                 <TouchableOpacity style= {{marginTop: 32}} onPress={this.signOutUser}>
                     <Text>Logout</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
+                
             </View>
         )
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    }
-})
+// const styles = StyleSheet.create({
+//     container: {
+//         flex: 1,
+//         justifyContent: "center",
+//         alignItems: "center"
+//     }
+// })
