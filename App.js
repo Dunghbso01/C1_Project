@@ -19,8 +19,7 @@ import React from 'react';
 import RegisterScreen from './screens/Register';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import {createStackNavigator} from 'react-navigation-stack';
-import search from './screens/search'
-import { Searchbar } from 'react-native-paper'; 
+
 
 
 // var firebaseConfig = FirebaseKeys;
